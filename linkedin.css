@@ -1,0 +1,102 @@
+body{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+header{
+	background:  #1e1e2f;
+	height: 47px;
+}	
+
+#logo-img{
+	height: 25px;
+	width: 25px;
+	margin-left: 100px;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	padding: 5px;
+	float: left;
+	position: relative;
+}
+
+#search-box{
+	height: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	position: relative;
+	padding: 8px;
+}
+
+#logo-img > #search-box{
+	float: left;
+}
+
+#home, #network, #job, #chat, #notification, #profile, #work{
+	background: transparent;
+	height: 20px;
+	width: 20px;
+	margin-left: 15px; 
+}
+
+ul li{
+	display: inline-block;
+	padding: 3px;
+	margin: 0px;
+
+}
+ul{
+	display: inline;
+	position: relative;
+	padding: 5px;
+}
+#left{
+    width: 600px;
+	float: left;
+}
+li a span {
+	color: #fff;
+	margin-left: 10px;	
+}
+#vertical-line{
+	width: 2px;
+	height: 38px;
+	background-color: #fff;
+	margin-left: 15px;
+}
+#main-content{
+    height: 100%;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+#text{
+	color: #dccea4;
+	max-width: 100px;
+	margin-left: 15px;
+	text-decoration: underline;
+	line-height: 1.3em;
+	margin-bottom: 1px;
+}
+@media (max-width: 767px){
+	#home, #network, #job, #notification, #work, #text{
+		visibility: hidden;
+		display: none;
+	}
+	li a span {
+		visibility: hidden;
+		display: none;
+	}
+	#left{
+		width: auto;
+	}
+	#main-content{
+		height: 100%;
+		width: 100%;
+	}
+	#chat{
+		float: right;
+		visibility: visible;
+		display: initial;
+	}
+}	
